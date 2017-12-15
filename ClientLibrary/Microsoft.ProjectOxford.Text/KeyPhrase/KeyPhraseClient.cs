@@ -12,7 +12,7 @@ namespace Microsoft.ProjectOxford.Text.KeyPhrase
     /// Client for interacting with the Text Analytics key phrase detection API.
     /// </summary>
     /// <seealso cref="Microsoft.ProjectOxford.Text.Core.TextClient" />
-    public class KeyPhraseClient : TextClient
+    public class KeyPhraseClient :TextClient
     {
         #region Constructors
 
@@ -20,9 +20,9 @@ namespace Microsoft.ProjectOxford.Text.KeyPhrase
         /// Initializes a new instance of the <see cref="KeyPhraseClient"/> class.
         /// </summary>
         /// <param name="apiKey">The Text Analytics API key.</param>
-        public KeyPhraseClient(string apiKey) : base(apiKey)
+        public KeyPhraseClient(string apiKey, string urlEndPoint = "https://eastus2.api.cognitive.microsoft.com/text/analytics/v2.0/keyPhrases") : base(apiKey)
         {
-            this.Url = "https://westus.api.cognitive.microsoft.com/text/analytics/v2.0/keyPhrases";
+            this.Url = urlEndPoint;
         }
 
         #endregion Constructors

@@ -18,7 +18,7 @@ namespace Microsoft.ProjectOxford.Text.Language
         /// <param name="apiKey">The Text Analytics API key.</param>
         public LanguageClient(string apiKey) : base(apiKey)
         {
-            this.Url = "https://westus.api.cognitive.microsoft.com/text/analytics/v2.0/languages";
+            this.Url = "https://eastus2.api.cognitive.microsoft.com/text/analytics/v2.0/languages";
         }
 
         #endregion Constructors
